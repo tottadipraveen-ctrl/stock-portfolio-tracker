@@ -1,0 +1,64 @@
+# Stock Portfolio Management & Market Analytics System
+
+## Project Overview
+
+The Stock Portfolio Management & Market Analytics System is a MySQL-based relational database project designed to manage and analyze stock market investment data.
+
+The system allows users to create portfolios, track stock transactions, maintain watchlists, and analyze historical stock prices. It demonstrates database design concepts such as normalization, relationships, constraints, indexing, and advanced SQL queries.
+
+## Objectives
+
+- Store and manage investor information
+- Track multiple stock portfolios for users
+- Record stock buy/sell transactions
+- Maintain historical stock price data
+- Analyze portfolio performance
+- Generate investment insights using SQL queries
+
+## Database Design
+
+The database is designed using a relational model with multiple interconnected tables.
+
+## Entity Relationship Diagram
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/ed218edb-521c-4a83-b91b-cbacab98469d" />
+
+## Index Optimization
+Indexes are created for faster searching.
+Implemented indexes:
+
+idx_stock_symbol
+
+idx_transaction_date
+
+idx_stock_price_date
+
+Improves query performance for:
+- Stock lookup
+- Transaction filtering
+- Historical price analysis
+
+## Analytics Queries Implemented
+
+The project includes SQL analysis such as:
+- Portfolio Valuation
+   Calculates:
+   > Total invested amount
+   > Current holdings
+   > Portfolio value
+   > Stock Performance Analysis
+- Ranks stocks based on:
+   > Price growth
+   > Historical returns
+   > Trading Activity Analysis
+- Identifies:
+   > Most traded stocks
+   > Highest transaction volume
+   > Portfolio Diversification
+- Analyzes investment distribution across sectors.
+- Moving Average Calculation
+  Uses SQL Window Functions:
+  AVG() OVER()
+  to analyze stock price trends.
+
+## Technologies Used
+MySQL 8.0
